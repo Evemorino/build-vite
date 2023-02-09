@@ -2,26 +2,19 @@
  * @Author: navalercon
  * @Date: 2023-01-09 09:06:30
  * @LastEditors: navalercon
- * @LastEditTime: 2023-01-10 08:37:11
+ * @LastEditTime: 2023-02-08 17:30:02
  * @Description: 
 -->
 <template>
-  <!-- <el-config-provider :locale="zhCn"> -->
-  <router-view
-    v-slot="{ Component }"
-    class="w-100vw h-100vh relative overflow-hidden z-0 select-none page"
-  >
-    <transition>
-      <keep-alive>
-        <component :is="Component" />
-      </keep-alive>
-    </transition>
-  </router-view>
-  <!-- </el-config-provider> -->
+  <el-config-provider :locale="zhCn">
+    <router-view
+      class="page bg-light-50 w-100vw h-100vh relative overflow-hidden z-0 select-none"
+    />
+  </el-config-provider>
 </template>
 
 <script setup lang="ts">
-  // import zhCn from 'element-plus/es/locale/lang/zh-cn'
+  import zhCn from 'element-plus/es/locale/lang/zh-cn';
 </script>
 
 <style lang="less">

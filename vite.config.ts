@@ -3,7 +3,7 @@
  * @Date: 2023-01-09 09:06:30
  * @LastEditors: navalercon
  * @LastEditTime: 2023-01-09 14:57:15
- * @Description:
+ * @Description: vite's configuration
  */
 import { UserConfig } from 'vite';
 import resolves from './build/vite/resolve';
@@ -20,6 +20,7 @@ export default (): UserConfig => {
 
   return {
     base: base,
+
     root: root,
 
     resolve: resolves,

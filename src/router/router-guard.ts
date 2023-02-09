@@ -7,8 +7,8 @@
  */
 import type { NavigationGuardNext, RouteLocationNormalized, Router } from 'vue-router';
 
-// import NProgress from 'nprogress';
-// import 'nprogress/nprogress.css';
+import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
 
 export function GuardMain(_router: Router): void {
   _router.beforeEach(
@@ -17,12 +17,12 @@ export function GuardMain(_router: Router): void {
       _from: RouteLocationNormalized,
       _next: NavigationGuardNext
     ) => {
-      // NProgress.start();
+      NProgress.start();
       _next();
     }
   );
 
   _router.afterEach(async (_to: RouteLocationNormalized) => {
-    // NProgress.done();
+    NProgress.done();
   });
 }

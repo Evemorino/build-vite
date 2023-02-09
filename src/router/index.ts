@@ -8,7 +8,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
 
 import routes from './routes';
-import { GuardMain } from './guard';
+import { GuardMain } from './router-guard';
 
 // 自动导入路由
 // import routes from 'virtual:generated-pages';

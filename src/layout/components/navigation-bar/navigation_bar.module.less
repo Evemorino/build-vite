@@ -1,0 +1,46 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible;
+  position: relative;
+  z-index: 0;
+  .left {
+    margin-left: 10px;
+    .button {
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      display: grid;
+      position: relative;
+      place-items: center;
+      z-index: 0;
+    }
+    .text {
+      font-size: 14px;
+    }
+  }
+  .right {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      position: relative;
+      z-index: 0;
+      cursor: pointer;
+    }
+    .button {
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      display: grid;
+      place-items: center;
+      position: relative;
+      z-index: 0;
+    }
+  }
+}

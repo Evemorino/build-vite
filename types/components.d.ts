@@ -8,6 +8,13 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     ATable: typeof import('ant-design-vue/es')['Table']
+    ElAside: typeof import('element-plus/es')['ElAside']
+    ElCollbasr: typeof import('element-plus/es')['ElCollbasr']
+    ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
+    ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
+    ElScollbar: typeof import('element-plus/es')['ElScollbar']
+    ElScrollbar: typeof import('element-plus/es')['ElScrollbar']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SvgIcon: typeof import('./../src/components/SvgIcon/index.vue')['default']
