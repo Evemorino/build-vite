@@ -2,7 +2,7 @@
  * @Author: navalercon
  * @Date: 2023-01-09 09:06:30
  * @LastEditors: navalercon
- * @LastEditTime: 2023-01-09 14:57:15
+ * @LastEditTime: 2023-02-09 11:28:00
  * @Description: vite's configuration
  */
 import { UserConfig } from 'vite';

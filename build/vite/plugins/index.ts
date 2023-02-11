@@ -2,7 +2,7 @@
  * @Author: navalercon
  * @Date: 2023-01-09 11:59:49
  * @LastEditors: navalercon
- * @LastEditTime: 2023-01-09 16:50:38
+ * @LastEditTime: 2023-02-09 11:25:15
  * @Description:
  */
 import vue from '@vitejs/plugin-vue';
@@ -11,16 +11,16 @@ import vueJsx from '@vitejs/plugin-vue-jsx';
 import type { PluginOption } from 'vite';
 
 import windiCSS from 'vite-plugin-windicss';
-// import progress from 'vite-plugin-progress';
+import progress from 'vite-plugin-progress';
 
 import { AutoImportDeps } from './autoImport';
 import { AutoRegistryComponents } from './component';
 // import { PagesPlugin } from './pages';
 // import { layoutsPlugin } from './layout';
 import { svgDev } from './svg';
-// import { visualizerPlugin } from './visualize';
+import { visualizerPlugin } from './visualize';
 // import { mockPlugin } from './mock';
-// import { compressPlugin } from './compress';
+import { compressPlugin } from './compress';
 // import { htmlPlugin } from './html';
 // import { restartPlugin } from './restart';
 
@@ -53,7 +53,7 @@ export function createVitePlugins(): (PluginOption | PluginOption[])[] {
   // plugins.push(restartPlugin());
 
   // 压缩
-  // plugins.push(compressPlugin());
+  plugins.push(compressPlugin());
 
   // 打包生成HTML
   // plugins.push(htmlPlugin());
@@ -62,13 +62,13 @@ export function createVitePlugins(): (PluginOption | PluginOption[])[] {
   // plugins.push(mockPlugin());
 
   // visualize
-  // plugins.push(visualizerPlugin());
+  plugins.push(visualizerPlugin());
 
-  //windicss
+  // windicss
   plugins.push(windiCSS());
 
   //progress 进度条
-  // plugins.push(progress());
+  plugins.push(progress());
 
   return plugins;
 }

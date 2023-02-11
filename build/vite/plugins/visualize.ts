@@ -2,10 +2,10 @@
  * @Author: navalercon
  * @Date: 2023-01-09 15:21:32
  * @LastEditors: navalercon
- * @LastEditTime: 2023-01-09 15:22:41
+ * @LastEditTime: 2023-02-09 14:04:49
  * @Description:
  */
-import visualizer from 'rollup-plugin-visualizer';
+import { visualizer } from 'rollup-plugin-visualizer';
 import type { PluginOption } from 'vite';
 
 export const visualizerPlugin = () => {
